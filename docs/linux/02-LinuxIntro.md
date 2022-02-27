@@ -16,6 +16,6 @@ In the following pages we will learn more about
 
 [Next: Day 0](00-day00.md)
 
-[Introduction](01-anIntro.md)
+[Home](../index.md)
 
-[Top](#index)
+[Top](02-LinuxIntro.md)
