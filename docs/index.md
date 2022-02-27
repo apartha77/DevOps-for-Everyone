@@ -14,24 +14,12 @@ test again
 - [Day 03 : Few other Data Types](03-day03.md)
 - [Day 04 : Playing with Numbers](04-day04.md)
 - [Day 05 : Adding two Text variables](05-day05.md)
-- [Day 06 : Working with VS Code](06-day06.md)
-- [Day 07 : String in details](07-day07.md)
-- [Day 08 : Boolean - True/False Value](08-day08.md)
-- [Day 09 : Condition (if...else...)](09-day09.md)
-- [Day 10 : Collections Data Type](10-day10.md)
-- [Day 11 : Loop - for](11-day11.md)
-- [Day 12 : Loop - While](12-day12.md)
-- [Day 13 : Function](13-day13.md)
-- [Day 14 : Errors or Exceptions](14-day14.md)
-- [Day 15 : Commenting Code](15-day15.md)
-- [Day 16 : User Input](16-day16.md)
-- [Day 17 : Using Module](17-day17.md)
-- [Day 18 : Class](18-day18.md)
-- [Day 19 : Putting it together](19-day19.md)
-- [Day 20 : Python Learning Resources](20-day20.md)
 
 ## Learning Linux Fundamentals
 
+- [Linux Introduction](linux/02-LinuxIntro.md)
+- [Day 00 : Setting up the PC](00-day00.md)
+- [Day 01 : Beginning](01-day01.md)
 
 ## Network & Security Fundamentals
 
