@@ -5,9 +5,9 @@ Will create all the pages here
 test again
 ![banner](img/Python-for-Everyone-Banner.png)
 
-## Python Programming Fundamentals
+## Learning DevOps Fundamentals
 
-- [Introduction](00-anIntro.md)
+- [Introduction](01-anIntro.md)
 - [Day 00 : Setting up the PC](00-day00.md)
 - [Day 01 : Beginning](01-day01.md)
 - [Day 02 : Using Variable](02-day02.md)
@@ -29,6 +29,23 @@ test again
 - [Day 18 : Class](18-day18.md)
 - [Day 19 : Putting it together](19-day19.md)
 - [Day 20 : Python Learning Resources](20-day20.md)
+
+## Learning Linux Fundamentals
+
+
+## Network & Security Fundamentals
+
+## CI/CD Fundamentals - using AWS Native & Jenkins
+
+## Scripiting Fundamentals - with Python
+
+## Containers Fundamentals 
+
+## IaS Fundamentals - with Teraform & Ansible
+
+## Version Control Fundamentals - with GitHub
+
+## DevOps - First Project 
 
 ## Working with Files
 
