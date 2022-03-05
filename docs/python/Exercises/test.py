@@ -59,25 +59,59 @@
 #>= 0.7     C
 #>= 0.6     D
 #< 0.6    F
-strScore = input('Enter score between 0.0 and 1.0:')
-try:
-    floatScore = float(strScore)
-    if(floatScore > 1):
-        print('Please enter score within the range')
-    elif(floatScore>=0.9):
-        print('Grade achieved: A')
-    elif(floatScore>=0.8):
-        print('Grade achieved: B')
-    elif(floatScore>=0.7):
-        print('Grade achieved: C')
-    elif(floatScore>=0.6):
-        print('Grade achieved: D')
-    elif(floatScore<0.6):
-        print('Grade achieved: F')
-except:
-    print('Enter proper value')
-
+#strScore = input('Enter score between 0.0 and 1.0:')
+#try:
+#    floatScore = float(strScore)
+#    if(floatScore > 1):
+#        print('Please enter score within the range')
+#    elif(floatScore>=0.9):
+#        print('Grade achieved: A')
+#    elif(floatScore>=0.8):
+#        print('Grade achieved: B')
+#    elif(floatScore>=0.7):
+#        print('Grade achieved: C')
+#    elif(floatScore>=0.6):
+#        print('Grade achieved: D')
+#    elif(floatScore<0.6):
+#        print('Grade achieved: F')
+#except:
+#    print('Enter proper value')
 #-------------------------------------------------
+# String manipulation
+#Exercise 5: 
+#strText = 'X-DSPAM-Confidence:0.8475'
+#intSP = strText.find(':')
+#print(intSP)
+#print(strText[intSP+1:])
+
+#index = 0
+#while index < len(strText):
+#    strValue = strText[index]
+#    print(strValue)
+#    index = index+1
+#print('While completed')
+
+#for char in strText:
+#    print(char)
+#---------------------------------------------------
+#File manipulation
+try:
+    fhand = open('Test.txt')
+except:
+    print('file clould not be read')
+#intLeng = fhand.read()
+#print(len(intLeng))
+#Count the number of lines in the text file
+count =0
+for line in fhand:
+    count = count +1
+    print(line.rstrip())
+print('Line count:', count)
+
+
+
+
+
 
 
 

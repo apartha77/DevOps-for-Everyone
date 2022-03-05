@@ -28,7 +28,24 @@ print('Welcome', name)``` comma will add space inbetween
 #### Functions
 - Set of code store and reuse
 ![Function](images/Python-Function.png)
-- manage disks and software package
+- Building Function - ```def MyFunction():``` this will hold my customer code. Now, invoke or call this function from wherever required. Function can take arguments(value) or parameters (variable), process them inside the function and return results. 
+#### Loops - Repeated Steps    
+- To create the loop we need Iteration, iteration variable to control the loop. Similar to ```If``` where condition is checked for a finite number of times before the loops ends. Example ```While, ```. We can create infinite loop and put a condition inside and then use ```break``` to stop the loop once condition is met and ```continue``` to send the control back to ```while```.
+``` 
+While True:
+ line = input('>')
+  if(line[0]==#):
+   continue
+  if (line =='done'):
+   break
+  print(line)
+  ```
+
+
+- While manage disks and software package
+- d
+- d
+
 
 
 
