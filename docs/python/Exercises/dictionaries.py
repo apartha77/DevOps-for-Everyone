@@ -35,9 +35,73 @@ for word in words:
     if (counts.get(word)>highestcount):
         highestcount = counts.get(word)
         highestword = word
-print('highest count is:',highestcount)
-print ('highest used word is:', highestword)
+#print('highest count of word is:',highestcount)
+#print ('and the highest used word is:', highestword)
 #print(counts)
+# Iterate thru the dictionary and print key and values
+#for key in counts:
+    #print(key, counts[key])
+#print the keys
+#print(counts.keys())
+#convert to list and print keys
+#print(list(counts))
+#print values
+#print(counts.values())
+# Two Iteration variables - same for loop to find highest count
+bigcount = None
+bigword = None
+for k,v in counts.items():
+    #print(k,v)
+    if bigcount is None or v>bigcount:
+        bigword = k
+        bigcount = v    
+#print(bigword, bigcount)
+
+#read file
+fhandler1 = open("Test.txt")
+dcount = dict()
+for line in fhandler1:
+    words= line.split()
+    #create word dictionary - Idioms
+    for word in words:
+        dcount[word] = dcount.get(word,0)+1
+#reversing the key & value order in the dictionary by the help of list and Tuple
+lst = list()
+for key, val in dcount.items():
+    #new tuple in val, key order
+    newtuple = (val, key)
+    lst.append(newtuple)
+#sort the list in reverse, big to small
+lst = sorted(lst, reverse=True)
+#print the top 3 key & val
+#for val, key in lst[:3]:
+    #print(key,val)
+
+#The same can be reduced to 
+ffhander = open("Test.txt")
+mcount = dict()
+mlist = list()
+for mline in ffhander:
+    mwords = mline.split()
+    for mword in mwords:
+        mcount[mword] = mcount.get(mword,0)+1
+# usling list comprehension - reduces the val, key reverse and sort at the sametime
+mlist = sorted([(val,key)for key, val in mcount.items()], reverse=True)
+#print top 3
+print(mlist[:3])
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
