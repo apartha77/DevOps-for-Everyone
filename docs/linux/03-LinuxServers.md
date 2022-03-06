@@ -1,18 +1,16 @@
-## An Introduction to Linux
+## Servers & Desktops
 
 Here we will see what we mean by DevOps and its core components:  
 #### Learning Objectives
-- view, create, copy, move and remove files
-- search and analyse text
-- configure network connection, user & groups 
-- manage disks and software packages
+- List different services by Linux OS
+- Web servers available in Linux
+- Database servers available in Linux
+- Start and Stop different services
 
-![Intro Image](../images/Linux-Learning.png)
-
-In the following pages we will learn more about 
-
-
-#### Linux Common Commands - frequently used
+#### Linux Server & Services 
+- When a linux server runs a background process continually is is called a **Deamon** e.g., mysqld deamon process for mysql. 
+- Linux server provide services for File Server, Web Server, DB Server, Mail, Print etc.
+-  
 ##### Common Commands (part I)  
 - • **pwd** – returns the path of the current working directory
 - **cd** – change directory
@@ -43,11 +41,10 @@ current directory
 
 ---
 
-[Next: Server](03-LinuxServers.md)
-
-[Home](../index.md)
-
-[Top](02-LinuxIntro.md)
+[Next: Day 0](00-day00.md)  
+[Previous: Intro](02-LinuxIntro.md)  
+[Home](../index.md)  
+[Top](03-LinuxServers.md)
 
 
 
