@@ -1,4 +1,4 @@
-## Servers & Desktops
+## Servers & Desktops, Files & Dicrectories 
 
 Here we will see what we mean by DevOps and its core components:  
 #### Learning Objectives
@@ -10,8 +10,13 @@ Here we will see what we mean by DevOps and its core components:
 #### Linux Server & Services 
 - When a linux server runs a background process continually is is called a **Deamon** e.g., mysqld deamon process for mysql. 
 - Linux server provide services for File Server, Web Server, DB Server, Mail, Print etc.
--  
-##### Common Commands (part I)  
+- Web Servers - Listen to port 80 or 443 (e.g., Apache, nginx, httpd) 
+- Init or systemd is the parent process for every process. Manage services with Systemd - ``` sudo systemctl start or stop, enable, disable, restart, reload, status [application.server]``` all of these will to manage different services. 
+- Which init to see PID
+
+#### Files & Directories 
+- Refer to ss64.com for all Linux commands [SS64](https://ss64.com/bash/)
+  
 - • **pwd** – returns the path of the current working directory
 - **cd** – change directory
 - cd .. (with two dots) to move one directory up
