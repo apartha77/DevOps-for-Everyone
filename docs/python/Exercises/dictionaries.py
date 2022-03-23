@@ -1,7 +1,6 @@
 # Example of dictionaries - if exists increment or add in dictionary
 from unittest.util import _count_diff_hashable
-
-
+#Process 1 - Lengthy process
 counts = dict()
 names = ['test1', 'test2', 'test3', 'test2', 'test4',]
 for name in names:
@@ -10,20 +9,22 @@ for name in names:
     else :
         counts[name] = counts[name]+1
 #print(counts)
-
 #--------------------------------------
-#Same operation in different way using get method of dictionary
+#Same operation in different way using 'get' method of dictionary
 newcounts = dict()
 for name in names:
     # If new key then default by 0 and plus 1; if existing key then keyvalue +1; examples for histogram
     newcounts[name] = newcounts.get(name, 0)+1
-#print('Revised method of get')
-#print(newcounts)
+#print('Revised method of get', newcounts)
 #------------------------------------------
 # Read a file and count the occurance of a word; print highest count
 fhandler = open("Test.txt")
 #print(fhandler)
-lines = fhandler.read()
+try:
+    lines = fhandler.read()
+except:
+    print("file does not exist")
+    exit()
 #print(lines)
 words = lines.split()
 #print(words)
@@ -35,18 +36,20 @@ for word in words:
     if (counts.get(word)>highestcount):
         highestcount = counts.get(word)
         highestword = word
-#print('highest count of word is:',highestcount)
-#print ('and the highest used word is:', highestword)
-#print(counts)
+    #print('highest count of word is:',highestcount)
+    #print ('and the highest used word is:', highestword)
+    #print(counts)
+#----------------------------------------------------------
 # Iterate thru the dictionary and print key and values
 #for key in counts:
-    #print(key, counts[key])
+    #print("Key is", key, "and Value is", counts[key])
 #print the keys
-#print(counts.keys())
-#convert to list and print keys
-#print(list(counts))
-#print values
 #print(counts.values())
+#convert to list and print keys
+# print(list(counts))
+#print values
+# #print(counts.values())
+#-------------------------------------------------------------------------
 # Two Iteration variables - same for loop to find highest count
 bigcount = None
 bigword = None
@@ -56,13 +59,13 @@ for k,v in counts.items():
         bigword = k
         bigcount = v    
 #print(bigword, bigcount)
-
-#read file
+#--------------------------------------------------------------------------------
+#read file - dictionary Idioms - use of Tuples - reverse the key value
 fhandler1 = open("Test.txt")
 dcount = dict()
 for line in fhandler1:
     words= line.split()
-    #create word dictionary - Idioms
+    #create word dictionary - **Idioms**
     for word in words:
         dcount[word] = dcount.get(word,0)+1
 #reversing the key & value order in the dictionary by the help of list and Tuple
@@ -73,10 +76,11 @@ for key, val in dcount.items():
     lst.append(newtuple)
 #sort the list in reverse, big to small
 lst = sorted(lst, reverse=True)
-#print the top 3 key & val
-#for val, key in lst[:3]:
-    #print(key,val)
-
+#print(lst)
+# Now print the top 3 key & val
+# for val, key in lst[:3]:
+#     print(key,val)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #The same can be reduced to 
 ffhander = open("Test.txt")
 mcount = dict()
@@ -89,27 +93,4 @@ for mline in ffhander:
 mlist = sorted([(val,key)for key, val in mcount.items()], reverse=True)
 #print top 3
 print(mlist[:3])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#--------------------------------------------------------------
