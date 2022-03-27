@@ -1,4 +1,4 @@
-# Network - Sockets - Examples sockets
+# Network - Sockets - Examples sockets - urllib - 
 #---------------------------------------------------------------------
 # 24-Mar-22 - Warm up
 # print("hello world")
@@ -46,3 +46,10 @@
 
 # mysock.close()
 #--------------------------------------------------------------------------------
+import urllib.request, urllib.parse, urllib.error
+
+fhandler = urllib.request.urlopen("http://data.pr4e.org/romeo.txt")
+for line in fhandler:
+    print(line.decode().strip())
+
+
